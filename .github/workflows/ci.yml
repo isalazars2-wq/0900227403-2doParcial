@@ -26,7 +26,7 @@ jobs:
       with:
         java-version: '21'  # Actualizado de 17 a 21 para cumplir con los requisitos del proyecto
         distribution: 'temurin'
-        cache: mave
+        cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Ejecutar pruebas
