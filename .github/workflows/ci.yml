@@ -21,12 +21,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 17
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '21'  # Actualizado de 17 a 21 para cumplir con los requisitos del proyecto
         distribution: 'temurin'
-        cache: maven
+        cache: mave
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Ejecutar pruebas
